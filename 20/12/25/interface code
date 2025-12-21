@@ -1,0 +1,13 @@
+interface Vehicle {
+    void run();
+}
+class Bike implements Vehicle {
+    public void run() {
+        System.out.println("Bike running");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        new Bike().run();
+    }
+}
