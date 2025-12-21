@@ -1,0 +1,13 @@
+class Outer {
+    static class Inner {
+        void show() {
+            System.out.println("Static Inner");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new Outer.Inner().show();
+    }
+}
