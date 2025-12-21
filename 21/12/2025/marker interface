@@ -1,0 +1,14 @@
+interface Demo { }
+
+class Test implements Demo {
+    void show() {
+        System.out.println("Marker Interface");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.show();
+    }
+}
