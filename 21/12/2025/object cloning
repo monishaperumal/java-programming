@@ -1,0 +1,15 @@
+class Test implements Cloneable {
+    int x = 10;
+
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Test t1 = new Test();
+        Test t2 = (Test) t1.clone();
+        System.out.println(t2.x);
+    }
+}
