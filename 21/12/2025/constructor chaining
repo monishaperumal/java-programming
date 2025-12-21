@@ -1,0 +1,13 @@
+class A {
+    A() {
+        this(10);
+    }
+    A(int x) {
+        System.out.println(x);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        new A();
+    }
+}
