@@ -1,0 +1,14 @@
+class Student {
+    int id;
+    Student(int id) {
+        this.id = id;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student[] s = { new Student(1), new Student(2) };
+        for (Student x : s)
+            System.out.println(x.id);
+    }
+}
