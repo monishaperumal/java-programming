@@ -1,0 +1,15 @@
+class Student {
+    int id;
+    Student(int i) {
+        id = i;
+    }
+    void show() {
+        System.out.println(id);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student(10);
+        s.show();
+    }
+}
