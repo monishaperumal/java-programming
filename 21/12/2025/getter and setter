@@ -1,0 +1,19 @@
+class User {
+    private String name;
+
+    String getName() {
+        return name;
+    }
+
+    void setName(String n) {
+        name = n;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        User u = new User();
+        u.setName("Monisha");
+        System.out.println(u.getName());
+    }
+}
