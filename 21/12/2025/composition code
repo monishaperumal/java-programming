@@ -1,0 +1,14 @@
+class Heart {
+    void beat() {
+        System.out.println("Heart beating");
+    }
+}
+class Human {
+    Heart h = new Heart();
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new Human().h.beat();
+    }
+}
