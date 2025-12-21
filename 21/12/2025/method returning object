@@ -1,0 +1,13 @@
+class Test {
+    int x = 5;
+    Test get() {
+        return this;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Test t = new Test();
+        System.out.println(t.get().x);
+    }
+}
