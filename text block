@@ -1,0 +1,10 @@
+public class TextBlockDemo {
+    public static void main(String[] args) {
+        String message = """
+                Welcome to Java 20!
+                This is a basic program
+                using text blocks.
+                """;
+        System.out.println(message);
+    }
+}
