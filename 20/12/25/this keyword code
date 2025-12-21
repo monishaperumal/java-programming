@@ -1,0 +1,14 @@
+class Test {
+    int x;
+    Test(int x) {
+        this.x = x;
+    }
+    void show() {
+        System.out.println(x);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        new Test(5).show();
+    }
+}
