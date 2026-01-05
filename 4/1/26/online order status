@@ -1,0 +1,11 @@
+class OrderStatus {
+    public static void main(String[] args) {
+        int status = 2;
+
+        switch (status) {
+            case 1 -> System.out.println("Order Placed");
+            case 2 -> System.out.println("Shipped");
+            case 3 -> System.out.println("Delivered");
+        }
+    }
+}
