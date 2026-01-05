@@ -1,0 +1,8 @@
+class Quiz {
+    public static void main(String[] args) {
+        int score=0;
+        if("Java".equals("Java")) score++;
+        if(2+2==4) score++;
+        System.out.println("Score: "+score);
+    }
+}
