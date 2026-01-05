@@ -1,0 +1,14 @@
+import java.io.*;
+
+class FileWordCount {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new FileReader("data.txt"));
+        String line; int count=0;
+
+        while((line=br.readLine())!=null)
+            count += line.split(" ").length;
+
+        System.out.println("Words: "+count);
+        br.close();
+    }
+}
