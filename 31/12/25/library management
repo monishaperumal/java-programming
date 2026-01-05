@@ -1,0 +1,17 @@
+class Library {
+    String book = "Java";
+
+    void issue(String name) {
+        if (book.equals(name)) {
+            System.out.println("Book Issued");
+            book = "";
+        } else {
+            System.out.println("Book Not Available");
+        }
+    }
+
+    public static void main(String[] args) {
+        Library l = new Library();
+        l.issue("Java");
+    }
+}
