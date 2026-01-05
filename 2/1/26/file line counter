@@ -1,0 +1,11 @@
+import java.io.*;
+
+class LineCount {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br=new BufferedReader(new FileReader("data.txt"));
+        int c=0; 
+        while(br.readLine()!=null) c++;
+        System.out.println("Lines: "+c);
+        br.close();
+    }
+}
