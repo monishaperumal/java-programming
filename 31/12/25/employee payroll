@@ -1,0 +1,8 @@
+class Payroll {
+    public static void main(String[] args) {
+        int basic = 10000;
+        double hra = basic * 0.2;
+        double da = basic * 0.1;
+        System.out.println("Salary = " + (basic + hra + da));
+    }
+}
