@@ -1,0 +1,15 @@
+class ATM {
+    static int bal = 10000;
+
+    static void withdraw(int amt) {
+        if (amt <= bal) {
+            bal -= amt;
+            System.out.println("Withdrawn");
+        } else System.out.println("Low Balance");
+    }
+
+    public static void main(String[] args) {
+        withdraw(3000);
+        System.out.println("Balance: " + bal);
+    }
+}
