@@ -1,0 +1,12 @@
+class UsernameCheck {
+    public static void main(String[] args) {
+        String[] users = {"admin","user","test"};
+        String name = "admin";
+        boolean found = false;
+
+        for (String u : users)
+            if (u.equals(name)) found = true;
+
+        System.out.println(found ? "Taken" : "Available");
+    }
+}
