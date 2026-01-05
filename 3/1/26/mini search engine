@@ -1,0 +1,6 @@
+class SearchEngine {
+    public static void main(String[] args) {
+        String data="java python c";
+        System.out.println(data.contains("java")?"Found":"Not Found");
+    }
+}
