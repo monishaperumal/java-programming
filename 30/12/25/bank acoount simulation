@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class Bank {
+    int balance = 5000;
+
+    void deposit(int amt) {
+        balance += amt;
+    }
+
+    void withdraw(int amt) {
+        if (amt <= balance)
+            balance -= amt;
+        else
+            System.out.println("Insufficient Balance");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Bank b = new Bank();
+
+        while (true) {
+            System.out.println("1.Deposit 2.Withdraw 3.Balance 4.Exit");
+            int ch = sc.nextInt();
+
+            if (ch == 1) b.deposit(sc.nextInt());
+            else if (ch == 2) b.withdraw(sc.nextInt());
+            else if (ch == 3) System.out.println(b.balance);
+            else break;
+        }
+    }
+}
