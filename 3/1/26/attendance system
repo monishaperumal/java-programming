@@ -1,0 +1,6 @@
+class Attendance {
+    public static void main(String[] args) {
+        int total=100, present=85;
+        System.out.println("Attendance % = "+(present*100/total));
+    }
+}
