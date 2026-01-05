@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class AttendanceMenu {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int present = 0, absent = 0;
+
+        while (true) {
+            System.out.println("1.Present 2.Absent 3.Report 4.Exit");
+            int ch = sc.nextInt();
+
+            if (ch == 1) present++;
+            else if (ch == 2) absent++;
+            else if (ch == 3)
+                System.out.println("Present: " + present + " Absent: " + absent);
+            else break;
+        }
+    }
+}
