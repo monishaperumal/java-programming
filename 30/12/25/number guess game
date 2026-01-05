@@ -1,0 +1,14 @@
+
+import java.util.Scanner;
+
+class GuessGame {
+    public static void main(String[] args) {
+        int num = 7;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Guess number: ");
+        int g = sc.nextInt();
+
+        System.out.println(g == num ? "Correct!" : "Wrong!");
+    }
+}
