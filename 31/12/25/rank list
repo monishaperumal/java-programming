@@ -1,0 +1,13 @@
+class RankList {
+    public static void main(String[] args) {
+        int marks[] = {90,70,85};
+
+        for (int i=0;i<marks.length;i++)
+            for (int j=i+1;j<marks.length;j++)
+                if (marks[i]<marks[j]) {
+                    int t=marks[i]; marks[i]=marks[j]; marks[j]=t;
+                }
+
+        for (int m:marks) System.out.println(m);
+    }
+}
