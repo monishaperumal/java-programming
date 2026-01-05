@@ -1,0 +1,11 @@
+class ShoppingBill {
+    public static void main(String[] args) {
+        int price[] = {200, 150, 100};
+        int total = 0;
+
+        for (int p : price)
+            total += p;
+
+        System.out.println("Total Bill = " + total);
+    }
+}
