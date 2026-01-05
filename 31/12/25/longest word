@@ -1,0 +1,13 @@
+class LongestWord {
+    public static void main(String[] args) {
+        String s = "Java programming language";
+        String[] w = s.split(" ");
+        String max = "";
+
+        for (String word : w)
+            if (word.length() > max.length())
+                max = word;
+
+        System.out.println(max);
+    }
+}
