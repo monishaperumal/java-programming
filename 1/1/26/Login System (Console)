@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class Login {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String u="admin", p="1234";
+
+        System.out.print("User: ");
+        String un=sc.next();
+        System.out.print("Pass: ");
+        String pw=sc.next();
+
+        System.out.println(un.equals(u)&&pw.equals(p)?"Login Success":"Fail");
+    }
+}
