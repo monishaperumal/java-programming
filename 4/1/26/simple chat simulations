@@ -1,0 +1,8 @@
+class ChatSim {
+    public static void main(String[] args) {
+        System.out.println("User: Hi");
+        System.out.println("Bot: Hello!");
+        System.out.println("User: Bye");
+        System.out.println("Bot: See you!");
+    }
+}
