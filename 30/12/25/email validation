@@ -1,0 +1,7 @@
+class EmailCheck {
+    public static void main(String[] args) {
+        String email = "test@gmail.com";
+        System.out.println(email.contains("@") && email.endsWith(".com")
+                ? "Valid Email" : "Invalid Email");
+    }
+}
