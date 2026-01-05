@@ -1,0 +1,7 @@
+class PhoneValidate {
+    public static void main(String[] args) {
+        String phone = "9876543210";
+        System.out.println(phone.matches("[6-9][0-9]{9}") ?
+                "Valid" : "Invalid");
+    }
+}
