@@ -1,0 +1,9 @@
+class Capitalize {
+    public static void main(String[] args) {
+        String s = "java programming";
+        String[] w = s.split(" ");
+
+        for (String x : w)
+            System.out.print(x.substring(0,1).toUpperCase()+x.substring(1)+" ");
+    }
+}
