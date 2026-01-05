@@ -1,0 +1,11 @@
+class ExpenseTracker {
+    public static void main(String[] args) {
+        int expenses[] = {50, 100, 75};
+        int sum = 0;
+
+        for (int e : expenses)
+            sum += e;
+
+        System.out.println("Total Expense = " + sum);
+    }
+}
