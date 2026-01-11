@@ -1,0 +1,18 @@
+class Address {
+    String city = "Chennai";
+}
+
+class Employee {
+    Address addr;
+    Employee(Address addr) {
+        this.addr = addr;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Address a = new Address();
+        Employee e = new Employee(a);
+        System.out.println(e.addr.city);
+    }
+}
