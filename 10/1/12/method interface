@@ -1,0 +1,14 @@
+interface Test {
+    void show();
+}
+
+public class Main {
+    static void print() {
+        System.out.println("Method Reference");
+    }
+
+    public static void main(String[] args) {
+        Test t = Main::print;
+        t.show();
+    }
+}
