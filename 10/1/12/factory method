@@ -1,0 +1,15 @@
+class Car {
+    static Car getCar() {
+        return new Car();
+    }
+    void run() {
+        System.out.println("Car running");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car c = Car.getCar();
+        c.run();
+    }
+}
