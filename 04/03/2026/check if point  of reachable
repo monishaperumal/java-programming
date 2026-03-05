@@ -1,0 +1,30 @@
+class Solution {
+    public boolean isReachable(int targetX, int targetY) {
+        
+        if (targetX == 1 && targetY == 1) {
+            return true;
+        }
+
+        
+        while (targetX % 2 == 0) {
+            targetX /= 2;
+        }
+        while (targetY % 2 == 0) {
+            targetY /= 2;
+        }
+        
+        while (targetX >= 1 && targetY >= 1) {
+            if (targetX > targetY) {
+                targetX -= targetY;
+            } else if (targetX < targetY) {
+                targetY -= targetX;
+            } else {
+                
+                return targetX == 1 && targetY == 1;
+            }
+        }
+        
+        
+        return false;
+    }
+}
