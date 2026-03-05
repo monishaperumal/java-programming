@@ -1,0 +1,30 @@
+class Solution {
+    public String firstPalindrome(String[] words) {
+
+        for (String w : words) {
+            if (isPal(w)) {
+                return w;
+            }
+        }
+
+        return "";
+    }
+
+    private boolean isPal(String w) {
+
+        int left = 0;
+        int rigth = w.length() - 1;
+
+        while (left < rigth) {
+
+            if (w.charAt(left) != w.charAt(rigth)) {
+                return false;
+            }
+
+            left++;
+            rigth--;
+        }
+
+        return true;
+    }
+}
